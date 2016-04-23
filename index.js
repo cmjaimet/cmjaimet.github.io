@@ -138,7 +138,7 @@ var cpReporting = {
 	}
 };
 
-cpReporting.market = Object.keys( cpReporting.Newsrooms )[0];
+//cpReporting.market = Object.keys( cpReporting.Newsrooms )[0];
 
 cpReporting.mode = Object.keys( cpReporting.Reports )[0];
 
