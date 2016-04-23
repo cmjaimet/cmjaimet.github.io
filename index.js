@@ -1,8 +1,8 @@
 var cpReporting = {
 	report_name: 'corepress',
 	Reports: {
-		menus: { label: 'Menus', heads: [ 'Menu', 'Items' ] },
 		categories: { label: 'Categories', heads: [ 'Name', 'Slug', 'Sidebar', 'Video', 'Feed', 'Sponsorship', 'Image', 'Content Widgets' ] },
+		menus: { label: 'Menus', heads: [ 'Menu', 'Items' ] },
 		sidebars: { label: 'Sidebars', heads: [ 'Title', 'Widgets', 'Categories' ] },
 		skedtool: { label: 'Skedtool', heads: [ 'Name', 'Color' ] },
 		tags: { label: 'Tags', heads: [ 'Name', 'Slug' ] },
@@ -30,7 +30,7 @@ var cpReporting = {
 	mode: '',
 	market: '',
 	check_sponsored: true,
-	check_feed: true,
+	check_feed: false,
 	getTitleCase: function( _str ) {
 		if ( 'undefined' === typeof _str ) {
 			return '';
@@ -71,7 +71,7 @@ var cpReporting = {
 		return { label: _label, url: _url };
 	},
 	getNewsroomName: function( _mkt ) {
-		return cpReporting.Newsrooms[ _mkt ].label;
+		return ( '' === _mkt ) ? 'All Markets' : cpReporting.Newsrooms[ _mkt ].label;
 	},
 	confirmOnPageExit: function ( e ) {
 		if ( false === document.getElementById( 'pn_cp_offline_mode' ).checked ) {
@@ -239,7 +239,6 @@ var ReportFilters = React.createClass( {
 			<div>
 			<CheckboxSponsored />
 			<CheckboxFeed />
-					<ButtonToExcel />
 			</div>
 		);
 	}
@@ -565,6 +564,10 @@ var ReportWrapper = React.createClass( {
 					<ReportFilters />
 				</div>
 				<div className="pn_cp_wrapper">
+					<div className="pn_cp_report_title_wrapper">
+						<div className="pn_cp_report_title">ReactJS Sandbox: { title_ } &ndash; { cpReporting.getNewsroomName( this.props.mkt ) }</div>
+						<ButtonToExcel />
+					</div>
 					<ReportBox data={ this.state.data } />
 				</div>
 			</div>
