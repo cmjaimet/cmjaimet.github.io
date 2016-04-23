@@ -46,4 +46,4 @@ div#pn_cp_report_wrapper { overflow: auto; padding-bottom:36px; }
 a#pn_cp_download_link { display:none; visibility:hidden; }
 
 
-.pn_cp_wrapper { float:none; width:100%; overflow: auto; }
+.pn_cp_wrapper { float:none; width:100%; overflow: auto; padding: 4px 0px 4px 0px; }
