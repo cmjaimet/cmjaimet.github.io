@@ -239,6 +239,7 @@ var ReportFilters = React.createClass( {
 			<div>
 			<CheckboxSponsored />
 			<CheckboxFeed />
+					<ButtonToExcel />
 			</div>
 		);
 	}
@@ -562,7 +563,6 @@ var ReportWrapper = React.createClass( {
 				</div>
 				<div className="pn_cp_wrapper">
 					<ReportFilters />
-					<ButtonToExcel />
 				</div>
 				<div className="pn_cp_wrapper">
 					<ReportBox data={ this.state.data } />
