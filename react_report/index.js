@@ -537,7 +537,7 @@ var ReportWrapper = React.createClass( {
 	componentDidMount: function() {
 		var _data = {};
 		var _count = 0;
-		var _url = 'http://cmjaimet.github.io/all_cats.json';
+		var _url = 'all_cats.json';
 		this.serverRequest = $.get( _url, function( result ) {
 			_data = result;
 			_count ++;

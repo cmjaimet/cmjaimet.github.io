@@ -1,0 +1,6 @@
+body { background-image: url( 'images/sandbeach.jpg' ); background-size: 150%; }
+h1 { font-family: Arial; font-size: 30px; }
+ul li { width: 20%; height:200px; float:left; display: block; background-color:#FFF; border: 1px solid #333; margin:10px; padding: 8px; }
+ul a li { color: #333; text-decoration: none; }
+ul a li:hover { background-color: #FFA; }
+li h2 { font-family: Arial; font-size: 18px;}
