@@ -1,12 +1,6 @@
 # cmjaimet.github.io
 # Github Page source
-#
-# { Component #1 : index.html}
-{Comp 2:	 all.html 
-}
-{
-	
-	Three
-	:
-	test.php
-}
+# { Simple CSS Switcher : simple_css/index.html }
+# { Reporting with React : react_report/index.html }
+# { Traffic Camera Mapping : traffic_cams/index.html }
+# { Noise Mapping : noise_map/index.html }

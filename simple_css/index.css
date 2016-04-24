@@ -1,0 +1,14 @@
+.wrapper_basic { width: 50%; background-color: #333; border: 1px solid #FFF; color: #FFF; position:relative; }
+
+.wrapper_basic .header p { font-family: cursive; font-size: 14px; }
+.wrapper_basic .footer ul li a { color: #FAA; }
+.wrapper_basic .do_hide { display: none !important; }
+
+.wrapper_class { width: 100%; background-color: #FFF; border: 1px solid #333; color: #333; padding:12px; }
+
+.wrapper_class .header p { font-family: Arial; font-size: 24px; }
+.wrapper_class .footer ul li { list-style: none; padding: 16px; margin: 10px; float: none; overflow: auto; display: inline; background-color:#CCC; }
+.wrapper_class .footer ul li a { color: #000; border: 3px solid red; text-decoration: none; padding: 4px; }
+.wrapper_class .maybe_hide { display: none !important; }
+.wrapper_class .do_hide { display: block !important; }
+.wrapper_class button { padding: 20px; background-color: #FF0; position: absolute; bottom:10px; right:200px; }
