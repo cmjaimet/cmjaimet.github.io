@@ -1,6 +1,8 @@
 console.log(' Time to deliver a pizza ball!');
+//http://r613.calmseamedia.com/?feed=r613_events
+//http://r613.calmseamedia.com/cmj.php
 $.ajax({
-  url: "http://r613.calmseamedia.com/cmj.php",
+  url: "http://r613.calmseamedia.com/?feed=r613_events",
   dataType: "jsonp",
   jsonpCallback: "r613_events_cb"
 });
