@@ -1,4 +1,4 @@
-console.log(' Time to deliver a pizza ball!');
+console.log(' Time to deliver a pizza ball!' + r613_event_cat);
 //http://r613.calmseamedia.com/?feed=r613_events
 //http://r613.calmseamedia.com/cmj.php
 $.ajax({
