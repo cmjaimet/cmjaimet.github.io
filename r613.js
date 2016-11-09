@@ -4,11 +4,11 @@ if (typeof r613_event_cat === 'undefined') {
 console.log(' Time to deliver a pizza ball!' + r613_event_cat);
 //http://r613.calmseamedia.com/?feed=r613_events
 //http://r613.calmseamedia.com/cmj.php
-$.ajax({
-  url: "http://r613.calmseamedia.com/?feed=r613_events&cat=r613_event_cat",
-  dataType: "jsonp",
-  jsonpCallback: "r613_events_cb"
-});
+$.ajax( {
+  url: 'http://r613.calmseamedia.com/?feed=r613_events&cat=' + r613_event_cat,
+  dataType: 'jsonp',
+  jsonpCallback: 'r613_events_cb'
+} );
 function r613_events_cb( data_ ) {
   console.log('ok r613_events_cb');
 	$.each( data_, function( _index, _value ) {
