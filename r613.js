@@ -14,7 +14,6 @@ function r613_events_cb( data_ ) {
 	$.each( data_, function( _index, _value ) {
 		_wrapper = document.getElementById( 'r613_events' );
     _event = document.createElement( 'div' );
-    _event = document.style.float( 'none' );
 		_title = document.createElement( 'h2' );
 		_title.innerHTML = _value.title;
 		_date = document.createElement( 'p' );
