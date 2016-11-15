@@ -1,19 +1,20 @@
 if (typeof r613_event_cat === 'undefined') {
   var r613_event_cat = '';
 }
-console.log(' Time to deliver a pizza ball!' + r613_event_cat);
-//http://r613.calmseamedia.com/?feed=r613_events
-//http://r613.calmseamedia.com/cmj.php
+if (typeof r613_lang === 'undefined') {
+  var r613_lang = 'en';
+}
 $.ajax( {
-  url: 'http://r613.calmseamedia.com/?feed=r613_events&cat=' + r613_event_cat,
+  url: 'http://r613.calmseamedia.com/?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang,
   dataType: 'jsonp',
   jsonpCallback: 'r613_events_cb'
 } );
 function r613_events_cb( data_ ) {
-  console.log('ok r613_events_cb');
+  //console.log('ok r613_events_cb');
 	$.each( data_, function( _index, _value ) {
 		_wrapper = document.getElementById( 'r613_events' );
-		_event = document.createElement( 'div' );
+    _event = document.createElement( 'div' );
+    _event = document.style.float( 'none' );
 		_title = document.createElement( 'h2' );
 		_title.innerHTML = _value.title;
 		_date = document.createElement( 'p' );
