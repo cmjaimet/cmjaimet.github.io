@@ -28,7 +28,7 @@ function r613_events_cb( data_ ) {
 		_link.innerHTML = 'More...';
 		_link.href = _value.link;
     console.log('ok _value.image '+_value.image);
-    if ( '' !== _value.image ) {
+    if ( false !== _value.image ) {
   		_image = document.createElement( 'img' );
   		_image.src = _value.image;
   		_image.style.width = '200px';
