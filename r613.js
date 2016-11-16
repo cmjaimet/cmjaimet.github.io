@@ -11,10 +11,11 @@ $.ajax( {
   jsonpCallback: 'r613_events_cb'
 } );
 function r613_events_cb( data_ ) {
-  //console.log('ok r613_events_cb');
+  console.log('ok r613_events_cb');
 	$.each( data_, function( _index, _value ) {
 		_wrapper = document.getElementById( 'r613_events' );
     _event = document.createElement( 'div' );
+    _event.setAttribute( 'style', 'clear:left;float:none;' );
 		_title = document.createElement( 'h2' );
 		_title.innerHTML = _value.title;
 		_date = document.createElement( 'p' );
@@ -26,6 +27,7 @@ function r613_events_cb( data_ ) {
 		_link = document.createElement( 'a' );
 		_link.innerHTML = 'More...';
 		_link.href = _value.link;
+    console.log('ok _value.image '._value.image);
     if ( '' !== _value.image ) {
   		_image = document.createElement( 'img' );
   		_image.src = _value.image;
