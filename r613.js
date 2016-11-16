@@ -26,11 +26,13 @@ function r613_events_cb( data_ ) {
 		_link = document.createElement( 'a' );
 		_link.innerHTML = 'More...';
 		_link.href = _value.link;
-		_image = document.createElement( 'img' );
-		_image.src = _value.image;
-		_image.style.width = '200px';
-		_image.style.float = 'right';
-		_event.appendChild( _image );
+    if ( '' !== _value.image ) {
+  		_image = document.createElement( 'img' );
+  		_image.src = _value.image;
+  		_image.style.width = '200px';
+  		_image.style.float = 'right';
+      _event.appendChild( _image );
+    }
 		_event.appendChild( _title );
 		_event.appendChild( _date );
 		_event.appendChild( _location );
