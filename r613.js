@@ -4,6 +4,7 @@ if (typeof r613_event_cat === 'undefined') {
 if (typeof r613_lang === 'undefined') {
   var r613_lang = 'en';
 }
+console.log('?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang);
 $.ajax( {
   url: 'http://r613.calmseamedia.com/?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang,
   dataType: 'jsonp',
