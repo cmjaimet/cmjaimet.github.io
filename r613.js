@@ -21,7 +21,7 @@ function r613_events_cb( data_ ) {
 		_date = document.createElement( 'p' );
 		_date.innerHTML = 'Date: ' + _value.date + ' ' + _value.time;
 		_location = document.createElement( 'p' );
-		_location.innerHTML = 'Location: ' + _value.location;
+		_location.innerHTML = ( r613_lang === 'en' ? 'Location: ' : 'Adresse: ' ) + _value.location;
 		_details = document.createElement( 'p' );
 		_details.innerHTML = _value.details;
 		_link = document.createElement( 'a' );
