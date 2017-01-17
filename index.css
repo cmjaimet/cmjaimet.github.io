@@ -1,10 +1,12 @@
 /* body { background-image: url( 'images/sandbeach.jpg' ); background-size: 150%; } */
-h1 { font-family: Arial; font-size: 30px; margin-bottom:30px; }
+h1 { font-family: Arial; font-size: 30px; margin: 50px 0px 0px 0px; text-align: top;}
 a, li { text-decoration: none; color: #333; }
-li { margin-bottom: 20px; }
+li { margin: 4px 0px 0px 0px; padding: 8px; border: 1px solid #999; background-color: #F9F9F9; }
 p { margin-top: 6px; }
 ul { -webkit-padding-start: 10px; list-style: none; }
-ul li a { color: #33D; line-height:18px; font-family: "RobotoDraft","Roboto",sans-serif; margin-bottom:20px; font-size: 17px; font-weight: 700;  }
+ul li a { color: #333; line-height:18px; font-family: "RobotoDraft","Roboto",sans-serif; margin-bottom:20px; font-size: 17px; font-weight: 700;  }
 ul li a:hover { color: #333; }
 
-div#wrapper {position:absolute;top: 10px;left:10px;width:100%;}
+div#wrapper { max-width:760px;width:100%; margin: auto auto;}
+div#header img { float:left; margin-right:20px;}
+div#header { overflow: auto; margin-bottom: 24px; text-align: top;}
