@@ -1,7 +1,7 @@
 .wrapper_basic { width: 50%; background-color: #333; border: 1px solid #FFF; color: #FFF; position:relative; }
 
 .wrapper_basic .header p { font-family: cursive; font-size: 14px; }
-.wrapper_basic .footer ul li a { color: #FAA; }
+.wrapper_basic .footer ul li a { color: #333; }
 .wrapper_basic .do_hide { display: none !important; }
 
 .wrapper_class { width: 100%; background-color: #FFF; border: 1px solid #333; color: #333; padding:12px; }
