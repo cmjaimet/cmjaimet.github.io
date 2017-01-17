@@ -2,7 +2,7 @@
 h1 { font-family: Arial; font-size: 30px; margin-bottom:30px; }
 a, li { text-decoration: none; }
 ul{ -webkit-padding-start: 10px; list-style: none; }
-ul a li { color: #333; line-height:18px; font-family: "RobotoDraft","Roboto",sans-serif;
+ul a li { color: #33C; line-height:18px; font-family: "RobotoDraft","Roboto",sans-serif;
 margin-bottom:20px; font-size: 14px; font-weight: 700;  }
 ul a li:hover { color: #999; }
 
