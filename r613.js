@@ -4,9 +4,8 @@ if (typeof r613_event_cat === 'undefined') {
 if (typeof r613_lang === 'undefined') {
   var r613_lang = 'en';
 }
-console.log('OK?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang);
 $.ajax( {
-  url: 'http://r613.calmseamedia.com/?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang,
+  url: 'http://ottawarefugeestory.ca/?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang,
   dataType: 'jsonp',
   jsonpCallback: 'r613_events_cb'
 } );
