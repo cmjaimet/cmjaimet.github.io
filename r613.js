@@ -1,16 +1,15 @@
-if (typeof r613_event_cat === 'undefined') {
+if ( typeof r613_event_cat === 'undefined' ) {
   var r613_event_cat = '';
 }
-if (typeof r613_lang === 'undefined') {
+if ( typeof r613_lang === 'undefined' ) {
   var r613_lang = 'en';
 }
 $.ajax( {
-  url: 'http://ottawarefugeestory.ca/?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang,
+  url: 'https://ottawarefugeestory.ca/?feed=r613_events&cat=' + r613_event_cat + '&lang=' + r613_lang,
   dataType: 'jsonp',
   jsonpCallback: 'r613_events_cb'
 } );
 function r613_events_cb( data_ ) {
-  console.log('ok r613_events_cb');
 	$.each( data_, function( _index, _value ) {
 		_wrapper = document.getElementById( 'r613_events' );
     _event = document.createElement( 'div' );
@@ -26,7 +25,6 @@ function r613_events_cb( data_ ) {
 		_link = document.createElement( 'a' );
 		_link.innerHTML = 'More...';
 		_link.href = _value.link;
-    console.log('ok _value.image '+_value.image);
     if ( false !== _value.image ) {
   		_image = document.createElement( 'img' );
   		_image.src = _value.image;
@@ -40,6 +38,5 @@ function r613_events_cb( data_ ) {
 		_event.appendChild( _details );
 		_event.appendChild( _link );
 		_wrapper.appendChild( _event );
-	   // console.log(value);
-	});
+	} );
 }
